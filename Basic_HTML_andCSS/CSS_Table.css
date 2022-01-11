@@ -1,0 +1,16 @@
+table  {
+    border: 2px solid darkslateblue;
+}
+
+td:hover {
+    background-color: hotpink;
+    color: black;
+}
+tr, th {
+    background-color: silver;
+    color: lavenderblush;
+}
+tr, td {
+    background-color:lightcyan;
+    color: maroon;
+}
