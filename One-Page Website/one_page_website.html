@@ -2,9 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>How to Train Your Cat</title>
 		<link rel="shortcut icon" type="image/png" href="favicon_1.png"/>
-		<link rel="stylesheet" href="./CSS/one_page_webiste.css">
+		<script src="JS/one_page_website.js"defer ></script>
+		<link rel="stylesheet" href="./CSS//one_page_webiste.css">
 	</head>
 	<body>
 		<!--NAV-->
@@ -33,82 +35,74 @@
 		<!--END HOME-->
 		
 		<!--CAT SKILLS-->
-		<section>
-			<div id="catskills">
-				<h1>Cat Skills</h1>
-				<div>
-					
-					<!--PHOTO CONTAINER 1-->
-					<div>
-						<div>
-							<img src=".//thumb/thumbnail_1.png" alt=catleash>
-							<div>
-								<h3>Click to learn more</h3>
-								<p>What does your cat need to learn?</p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 1-->
-					
-					<!--PHOTO CONTAINER 2-->
-					<div>
-						<div>
-							<img src=".//thumb/thumbnail_2.png" alt=catskater>
-							<div>
-								<h3>Click to learn more</h3>
-								<p>What does your cat need to learn?</p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 2-->
-				
-					<!--PHOTO CONTAINER 3-->
-					<div>
-						<div>
-							<img src=".//thumb/thumbnail_3.png" alt=catsmile>					
-							<div>
-								<h3>Click to learn more</h3>
-								<p>What does your cat need to learn?</p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 3-->
-					
-					<!--PHOTO CONTAINER 4-->
-					<div>
-						<div>
-							<img src=".//thumb/thumbnail_4.png" alt=catreach>							<div>
-								<h3>Click to learn more</h3>
-								<p>What does your cat need to learn?</p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 4-->				
-					
-					<!--PHOTO CONTAINER 5-->
-					<div>
-						<div>
-							<img src=".//thumb/thumbnail_5.png" alt=catsitter>							<div>
-								<h3>Click to learn more</h3>
-								<p>What does your cat need to learn?</p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 5-->				
-					
-					<!--PHOTO CONTAINER 6-->
-					<div>
-						<div>
-							<img src=".//thumb/thumbnail_6.png" alt=catstick>							<div>
-								<h3>Click to learn more</h3>
-								<p>What does your cat need to learn?</p>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO CONTAINER 6-->		
-				</div>
+		<h2 style="text-align:center">CatSkills</h2>
+
+		<div class="row">
+		  <div class="column">
+			<img src=".//thumb/thumbnail_1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src=".//thumb/thumbnail_2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src=".//thumb/thumbnail_3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src=".//thumb/thumbnail_4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+		  </div>
+		</div>
+		
+		<div id="myModal" class="modal">
+		  <span class="close cursor" onclick="closeModal()">&times;</span>
+		  <div class="modal-content">
+		
+			<div class="mySlides">
+			  <div class="numbertext">1 / 4</div>
+			  <img src=".//thumb/thumbnail_1.png" style="width:100%">
 			</div>
-		</section>
+		
+			<div class="mySlides">
+			  <div class="numbertext">2 / 4</div>
+			  <img src=".//thumb/thumbnail_2.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+			  <div class="numbertext">3 / 4</div>
+			  <img src=".//thumb/thumbnail_3.png" style="width:100%">
+			</div>
+			
+			<div class="mySlides">
+			  <div class="numbertext">4 / 4</div>
+			  <img src=".//thumb/thumbnail_4.png" style="width:100%">
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+			<div class="caption-container">
+			  <p id="caption"></p>
+			</div>
+		
+		
+			<div class="column">
+			  <img class="demo cursor" src=".//thumb/thumbnail_1.png" style="width:100%" onclick="currentSlide(1)" alt="cat leash">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src=".//thumb/thumbnail_2.png" style="width:100%" onclick="currentSlide(2)" alt="cat skating">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src=".//thumb/thumbnail_3.png" style="width:100%" onclick="currentSlide(3)" alt="cat smiling">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src=".//thumb/thumbnail_4.png" style="width:100%" onclick="currentSlide(4)" alt="cat playing">
+			</div>
+		  </div>
+		</div>
+
+
+
+		
+			
 		<!--END CAT SKILLS-->
 		
 		<!--BOOK NOW-->
@@ -149,5 +143,7 @@
 			www.trainyourcatwithcarla.com &nbsp;|&nbsp; &copy;2022
 		</div>
 		<!--END FOOTER-->
+
+	
 	</body>
 </html>
